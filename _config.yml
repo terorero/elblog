@@ -278,7 +278,6 @@ permalink: /:categories/:title/
 # paginate_path: /page:num/
 timezone: America/La_Paz # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -286,8 +285,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - tzinfo
-  - tzinfo-data
+#  - tzinfo
+#  - tzinfo-data
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -296,8 +295,8 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - tzinfo
-  - tzinfo-data
+#  - tzinfo
+#  - tzinfo-data
 
 
 # Archives
