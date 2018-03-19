@@ -4,6 +4,7 @@
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
+github: [metadata]
 
 remote_theme             : "mmistakes/minimal-mistakes"
 # theme : minimal-mistakes-jekyl
@@ -17,10 +18,11 @@ title_separator          : "-"
 name                     : &name "TeroRERO GNU" # &name is a YAML anchor which can be *referenced later
 description              : &description "El espacio para la Bitácora de root."
 #url                      : "https://la.bitacoraroot.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-url                      : "" #://the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://terorero.github.io" #://the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 #baseurl                  : # "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
 baseurl                  : "/elblog" # "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
 ## No TeroRERO repository               : "bitacoraroot/blog"
+repository               : "terorero/elblog"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -151,7 +153,7 @@ exclude:
   - Capfile
   - CHANGELOG
   - config
-  - Gemfile
+  # Probando tema de localización - Gemfile
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
