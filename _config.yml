@@ -12,7 +12,7 @@ remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "es-ES"
+locale                   : "es-BO"
 title                    : "La Bitácora de root"
 title_separator          : "-"
 name                     : &name "TeroRERO GNU" # &name is a YAML anchor which can be *referenced later

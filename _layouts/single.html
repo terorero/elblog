@@ -52,9 +52,49 @@ layout: default
         {% endif %}
         {% include page__taxonomy.html %}
         {% if page.last_modified_at %}
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">
+        <!-- {{ page.last_modified_at | date: "%B %d, %Y" }} -->
+        <!-- Whitespace added for TeroRERO for readability -->
+        {% assign m = page.date | date: "%-m" %}
+        {{ page.date | date: "el %-d de" }}
+        {% case m %}
+          {% when '1' %}enero,
+          {% when '2' %}febrero,
+          {% when '3' %}marzo,
+          {% when '4' %}abril,
+          {% when '5' %}mayo,
+          {% when '6' %}junio,
+          {% when '7' %}julio,
+          {% when '8' %}agosto,
+          {% when '9' %}septiembre,
+          {% when '10' %}octubre,
+          {% when '11' %}noviembre,
+          {% when '12' %}diciembre,
+        {% endcase %}
+        {{ page.date | date: "%Y" }}
+      </time></p>
         {% elsif page.date %}
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">
+        <!-- {{ page.date | date: "%B %d, %Y" }} -->
+        <!-- Whitespace added for TeroRERO for readability -->
+        {% assign m = page.date | date: "%-m" %}
+        {{ page.date | date: "el %-d de" }}
+        {% case m %}
+          {% when '1' %}enero,
+          {% when '2' %}febrero,
+          {% when '3' %}marzo,
+          {% when '4' %}abril,
+          {% when '5' %}mayo,
+          {% when '6' %}junio,
+          {% when '7' %}julio,
+          {% when '8' %}agosto,
+          {% when '9' %}septiembre,
+          {% when '10' %}octubre,
+          {% when '11' %}noviembre,
+          {% when '12' %}diciembre,
+          {% endcase %}
+        {{ page.date | date: "%Y" }}
+      </time></p>
         {% endif %}
       </footer>
 

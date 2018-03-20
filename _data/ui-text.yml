@@ -95,6 +95,8 @@ es-ES:
   <<: *DEFAULT_ES
 es-CO:
   <<: *DEFAULT_ES
+es-BO:
+  <<: *DEFAULT_ES
 
 # French
 # ------
