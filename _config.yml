@@ -138,7 +138,6 @@ include:
   - .htaccess
   - _pages
   - _includes
-  - _layouts
   - staticman.yml  # Incluyendo para corregir error en comentarios desde github
 exclude:
   - "*.sublime-project"
