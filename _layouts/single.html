@@ -53,7 +53,6 @@ layout: default
         {% include page__taxonomy.html %}
         {% if page.last_modified_at %}
           <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">
-        <!-- {{ page.last_modified_at | date: "%B %d, %Y" }} -->
         <!-- Whitespace added for TeroRERO for readability -->
         {% assign m = page.last_modified_at | date: "%-m" %}
         {{ page.last_modified_at | date: "el %-d de" }}
@@ -72,11 +71,9 @@ layout: default
           {% when '12' %}diciembre,
         {% endcase %}
         {{ page.last_modified_at | date: "%Y" }}
-        <!-- {{ page.date | date: "%Y" }} -->
       </time></p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">
-        <!-- {{ page.date | date: "%B %d, %Y" }} -->
         <!-- Whitespace added for TeroRERO for readability -->
         {% assign m = page.date | date: "%-m" %}
         {{ page.date | date: "el %-d de" }}
