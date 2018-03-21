@@ -13,7 +13,26 @@
     <p class="comment__date">
       {% if include.date %}
         {% if include.index %}<a href="#comment{{ include.index }}" itemprop="url">{% endif %}
-        <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">{{ include.date | date: "%B %d, %Y at %I:%M %p" }}</time>
+        <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">
+          <!-- {{ include.date | date: "%B %d, %Y at %I:%M %p" }} -->
+          {% assign m = include.date | date: "%-m" %}
+          {{ include.date | date: "el %-d de" }}
+          {% case m %}
+            {% when '1' %}enero,
+            {% when '2' %}febrero,
+            {% when '3' %}marzo,
+            {% when '4' %}abril,
+            {% when '5' %}mayo,
+            {% when '6' %}junio,
+            {% when '7' %}julio,
+            {% when '8' %}agosto,
+            {% when '9' %}septiembre,
+            {% when '10' %}octubre,
+            {% when '11' %}noviembre,
+            {% when '12' %}diciembre,
+            {% endcase %}
+          {{ incude.date | date: "%Y at %I:%M %p" }}
+        </time>
         {% if include.index %}</a>{% endif %}
       {% endif %}
     </p>
