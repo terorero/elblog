@@ -9,10 +9,10 @@ github: [metadata]
 remote_theme             : "mmistakes/minimal-mistakes"
 # theme : minimal-mistakes-jekyl
 
-minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "zimbron" # "default", "air", "aqua", "bitacora", "colega", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "zimbron"
 
 # Site Settings
-locale                   : "es-BO"
+locale                   : "es-ES"
 title                    : "La Bitácora de root"
 title_separator          : "-"
 name                     : &name "TeroRERO GNU" # &name is a YAML anchor which can be *referenced later
