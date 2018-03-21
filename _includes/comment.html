@@ -31,7 +31,7 @@
             {% when '11' %}noviembre,
             {% when '12' %}diciembre,
             {% endcase %}
-          {{ incude.date | date: "%Y at %I:%M %p" }}
+          {{ incude.date | date: "%B %d, %Y at %I:%M %p" }}
         </time>
         {% if include.index %}</a>{% endif %}
       {% endif %}
