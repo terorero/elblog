@@ -285,6 +285,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+# TeroRERO fix deploy 02AGO2020
+  - jekyll-include-cache
 #  - tzinfo
 #  - tzinfo-data
 
